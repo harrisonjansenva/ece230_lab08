@@ -6,10 +6,10 @@ module citymux (enable, ceo_data, my_data, fred_data, jill_data, select, Y);
     output [3:0] Y;
 
 
-    assign Y =  enalbe && (
-                select == 0 ? ceo_data :
-                select == 1 ? my_data :
-                select == 2 ? fred_data : jill_data) ? 4'b0;
+    assign Y =  enable ? (
+                select == 2'b0 ? ceo_data :
+                select == 2'b01 ? my_data :
+                select == 2'b10 ? fred_data : jill_data) : 4'b0;
 
     
 endmodule

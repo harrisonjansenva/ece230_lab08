@@ -53,6 +53,7 @@ module test();
                 $finish;
             end
         end
+//        $display("Test passed!");
         #10 $finish;
     end
 endmodule
