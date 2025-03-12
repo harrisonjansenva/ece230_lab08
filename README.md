@@ -1,6 +1,5 @@
 # README - Multiplexer and Demultiplexer in Verilog
-### Author: Harrison Jansen van Beek
-### Author: Boise State ECE230 Instructors
+### Author: Harrison Jansen van Beek & Boise State ECE230 Instructors
 ### Date: 11 March 2025
 
 ## Overview
@@ -35,20 +34,21 @@ A demultiplexer takes a single input and routes it to one of several outputs bas
 
 ## Hardware Mapping
 
-Signal	Purpose	Direction
-sw[3:0]	CEO data	Input
-sw[7:4]	Your data	Input
-sw[11:8]	Fred’s data	Input
-sw[15:12]	Jill’s data	Input
-btnL	MUX select bit 0	Input
-btnU	MUX select bit 1	Input
-btnD	DEMUX select bit 0	Input
-btnR	DEMUX select bit 1	Input
-btnC	Enable for MUX/DEMUX	Input
-led[3:0]	Library output	Output
-led[7:4]	Fire Department output	Output
-led[11:8]	School output	Output
-led[15:12]	Rib Shack output	Output
+|   Signal   |        Purpose         | Direction |
+| :--------: | :--------------------: | :-------: |
+|  sw[3:0]   |        CEO data        |   Input   |
+|  sw[7:4]   |       Your data        |   Input   |
+|  sw[11:8]  |      Fred’s data       |   Input   |
+| sw[15:12]  |      Jill’s data       |   Input   |
+|    btnL    |    MUX select bit 0    |   Input   |
+|    btnU    |    MUX select bit 1    |   Input   |
+|    btnD    |   DEMUX select bit 0   |   Input   |
+|    btnR    |   DEMUX select bit 1   |   Input   |
+|    btnC    |  Enable for MUX/DEMUX  |   Input   |
+|  led[3:0]  |     Library output     |  Output   |
+|  led[7:4]  | Fire Department output |  Output   |
+| led[11:8]  |     School output      |  Output   |
+| led[15:12] |    Rib Shack output    |  Output   |
 
 ## Files
 * citymux.v – Implements the 4-to-1 multiplexer.
